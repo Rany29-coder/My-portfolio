@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>I'm a Photographer</title>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel = "stylesheet" href = "css/style.css">
+        <!-- amCharts Libraries -->
+        <link rel="stylesheet" href="https://www.amcharts.com/lib/4/maps.css" type="text/css">
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+        <script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+
+
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Country Information</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body" id="modalContent">
+                        <!-- Country information will be displayed here -->
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </head>
+<body>
+    
+    <!-- header -->
+    <header id = "header" class = "vh-100 flex">
+        <div class = "container">
+            <div class = "header-content">
+                <h1>I'm a <br><span class = "typewrite" data-loop = "yes" data-speed = "100" data-delay = "2000" data-words = '["product manager", "software engineer", "youtuber"]'></span></h1>
+                <h3>Rany Hanna</h3>
+
+                <ul class = "social-links">
+                    <li>
+                        <a href = "https://www.facebook.com/rany.nano/" class = "flex">
+                            <i class = "fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "https://github.com/Rany29-coder" class = "flex">
+                            <i class = "fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "https://www.instagram.com/rany_c.r/" class = "flex">
+                            <i class = "fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "https://www.youtube.com/@GuidelyRany" class = "flex">
+                            <i class = "fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- end of header -->
+
+    <!-- main content -->
+    <main>
+        <!-- about section -->
+        <section id = "about" class = "about py-7">
+            <div class = "container">
+                <div class = "about-content grid">
+                    <div class = "about-left">
+                        <img src = "images/about-pic.jpg" alt = "">
+                    </div>
+                    <div class = "about-right">
+                        <div class = "title">
+                            <h2>About Me</h2>
+                        </div>
+                        <p class = "lead">Hello, I'm Rany Hanna!
+
+                            From the vibrant alleys of Cairo to the spirited tango halls of Buenos Aires, my life's journey has been a tale of curiosity and discovery. As someone who thrives at the intersection of technology and human behavior, my academic background in cognitive neuroscience grants me a unique lens to decipher the 'whys' behind user behaviors.
+                            
+                            Over the years, I've delved into various domains — graphic design, UI/UX, coding, management, and marketing. Each experience has honed a particular skill, shaping me into a multifaceted technologist with a holistic approach to problem-solving. But what truly sets me apart is my world-traveler spirit. Having studied, worked, and mingled in diverse cultures, I've garnered invaluable insights into user preferences across the globe.
+                            
+                            When I'm not immersed in the digital world, you'll find me leafing through history books, contemplating philosophy, appreciating art, or leading worship at my local church. I'm a firm believer in lifelong learning, and my reading list (150 books and counting!) is a testament to that.
+                            
+                            Welcome to my space. Let's journey through the captivating realm of tech, art, and humanity together!</p>
+                        <a href = "#work" class = "btn-down">
+                            <i class = "fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of about section -->
+
+        <!-- work section -->
+        <section id = "work" class = "vh-100 flex py-7">
+            <div class = "container">
+                <div class = "work-content">
+                    <div class = "title">
+                        <h2>what am i doing?</h2>
+                    </div>
+                    <ul class = "work-top grid">
+                        <li class = "lead"><i class = "fas fa-dot-circle"></i> I approach product management by harnessing the principles of cognitive neuroscience, diving deep into understanding the 'why' behind user behaviors to develop resonant features.
+                        </li>
+                        <li class = "lead"><i class = "fas fa-dot-circle"></i> Your projects will benefit from my rich tapestry of experiences, spanning graphic design, UI/UX, coding, to management and marketing, cultivated across various global locations.
+                        </li>
+                        <li class = "lead"><i class = "fas fa-dot-circle"></i> My methodologies are rooted in best practices learned from leading global tech hubs and educational institutions. Registered with recognized international tech consortiums, I ensure every project meets top-tier standards.
+                            .</li>
+                        <li class = "lead"><i class = "fas fa-dot-circle"></i>Always forward-thinking, I come equipped with backup strategies and alternative solutions, even in dynamic environments, ensuring seamless execution and timely deliverables.
+
+                            .</li>
+                    </ul>
+
+                    <div class = "work-bottom grid">
+                        </div>
+                    </div>
+                    <a href = "#portfolio" class = "btn-down btn-down-white">
+                        <i class = "fas fa-chevron-down"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- end of work section -->
+
+        <!-- portfolio section -->
+        <section id = "portfolio" class = "vh-100 py-7">
+            <div class = "container">
+                <div class = "portfolio-content">
+                    <div class = "title">
+                        <h2>My Global Footprints</h2>
+                        <a href = "#contact" class = "btn-down">
+                            <i class = "fas fa-chevron-down"></i>
+                        </a>
+                    </div>
+                    <div id="chartdiv" style="width: 100%; height: 400px;"></div>
+                    <div class = "portfolio-grid grid">
+                       
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of portfolio section -->
+
+        <!-- Artifacts Section -->
+<section id="artifacts" style="padding: 50px 0;">
+    <div class="container">
+        <div class="artifacts-title">
+            <h2>Artifacts</h2>
+        </div>       
+        <!-- Minerva Assignments -->
+        <div class="artifact-card">
+            <h3>Minerva Assignement :SS50: Complex Systems Analysis Case Study
+            </h3>
+            <p>Link to <a href="https://drive.google.com/file/d/1Myq-sBhegZnYdUlZfgabTUUFIvfl3UHu/view?usp=sharing" target="_blank">full version of assignment</a>. The assignment focused on system analysis was enlightening, particularly when dissecting complex systems. In this project, I applied the foundational principles to a renowned pediatric hospital in Egypt, shedding light on its intricate operations and dynamics.
+
+                .</p>
+        </div>
+        <div class="artifact-card">
+            <h3>Minerva Assignment: CS113: Deep Dive: Vector Space Structure</h3>
+            <p>Link to <a href="https://drive.google.com/file/d/1Jvo3bTyzF6u2dNL_kaOvfuLOBxYK90t_/view?usp=sharing" target="_blank">full version of assignment</a>. Delving into another assignment, I acquired a comprehensive grasp of image analysis. This endeavor demystified the core mathematical tenets that underpin the realms of artificial intelligence and machine learning..</p>
+        </div>
+
+        <!-- Civic Project or Internship Experience -->
+        <div class="artifact-card">
+            <img src="images/IMG_4185.jpeg" alt="Image for Civic Project" class="artifact-image">
+            <h3>Civic Project / Internship Experience: T-hub</h3>
+            <p>At T-Hub, my journey was nothing short of transformative. Nestled amidst India's bustling tech panorama, T-Hub stands as a colossal testament to innovation, and my tenure there was an immersion into a world of relentless ingenuity. Engaging with some of the brightest minds and avant-garde ideas, I navigated through a myriad of challenges and opportunities, each sculpting my professional ethos. Collaborative endeavors and intense brainstorming sessions elucidated the nuances of the startup ecosystem, offering me unparalleled insights and hands-on experience. This chapter at T-Hub wasn't just a professional stint; it was an artifact of my growth and evolution in the tech realm, an experience I hold close, reminding me of my potential and the endless possibilities the future holds.
+
+
+
+
+            </p>
+        </div>
+
+        <!-- City Experience -->
+        <div class="artifact-card">
+            <img src="images/IMG_3261.JPG" alt="Image for City Experience" class="artifact-image">
+            <h3>City Experience: Argentina</h3>
+            <p>This experience in Buenos Aires was remarkable. I have documented all of it on my instagram and I loved how diverse and beutiful Argeuntia is. In addition , I have had the best Icecream that I have ever had in my life and made a short instagam video for the woman working there, you can check it out  <a href="https://www.instagram.com/p/Cw-QSFeOHqo/" target="_blank">here</a></a>.</p>
+        </div>
+
+        <!-- Personal Project -->
+        <div class="artifact-card">
+            <img src="images/youtube.jpg" alt="Image for Personal Project" class="artifact-image">
+            <h3>Personal Project</h3>
+            <p>One of my passions is Social media . Dive deep into my youtube channel where I talk about minerva , admissions , productiveity , neuroscience and more <a href="https://www.youtube.com/@GuidelyRany" target="_blank">here</a>.</p>
+        </div>
+
+        <!-- contact section -->
+        <section id = "contact" class = "py-7">
+            <div class = "container">
+                <div class = "contact-content flex">
+                    <div class = "contact-left">
+                        <div class="title">
+                            <h2>Let's Connect!</h2>
+                        </div>
+                        <p class = "lead"><i class = "fas fa-envelope"></i> ranymagdy@uni.minerva.edu</p>
+                        <form action="https://formspree.io/f/mknlqklp" method="POST">
+                            <input type="text" name="name" class="form-control" placeholder="What's your name? 🤔" style="margin-bottom: 10px;">
+                            <input type="email" name="email" class="form-control" placeholder="Where can I email you back? 📧" style="margin-bottom: 10px;">
+                            <textarea name="message" class="form-control" rows="4" placeholder="Share your thoughts, ideas, or just say hello! 🚀" style="margin-bottom: 15px;"></textarea>
+                            <input type="submit" class="btn-submit btn" value="Let's Connect!">
+                        </form>
+                        
+                        
+                    </div>
+
+                    <div class = "contact-right">
+                        <img src = "images/contact-pic.jpg" alt = "contact image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end of contact section -->
+
+        <!-- instagram section -->
+       <!-- Artifacts Section -->
+
+
+ 
+    </main>
+    <!-- end of main content -->
+
+    <!-- footer -->
+    <footer id = "footer" class = "py-7">
+        <div class = "container">
+            <div class = "footer-content">
+                <div>
+                    <h3>Rany Hanna</h3>
+                    <div><img src = "images/about-pic.jpg"></div>
+                </div>
+
+                <div>
+                    <h3>Links</h3>
+                    <ul class = "flex">
+                        <li><a href = "#">About Me</a></li>
+                        <li><a href = "#">Work</a></li>
+                        <li><a href = "#">Portfolio</a></li>
+                        <li><a href = "#">Contact Me</a></li>
+                        <li><a href = "#">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+    
+
+
+    <script>
+        am4core.ready(function () {
+          // Create map instance and configure the map here
+          var chart = am4core.create("chartdiv", am4maps.MapChart);
+          chart.geodata = am4geodata_worldLow;
+          chart.projection = new am4maps.projections.Miller();
+          chart.tooltip.defaultState.properties.opacity = 1;
+      
+          // Create map polygon series and customize them here
+          var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+          polygonSeries.exclude = ["AQ"];
+          polygonSeries.useGeodata = true;
+          var polygonTemplate = polygonSeries.mapPolygons.template;
+          polygonTemplate.fill = am4core.color("#e0e0e0");
+          var hs = polygonTemplate.states.create("hover");
+          hs.properties.fill = am4core.color("#B0B0B0");
+      
+          // Create series for pins and customize them here
+          var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+          imageSeries.dataFields.value = "value";
+          var imageTemplate = imageSeries.mapImages.template;
+          var marker = imageTemplate.createChild(am4core.Circle);
+          marker.radius = 8;
+          marker.fill = am4core.color("#FFFFFF");
+          marker.stroke = am4core.color("#000000");
+          marker.strokeWidth = 2;
+          marker.nonScaling = true;
+      
+          // Add labels to display country names
+          var label = imageTemplate.createChild(am4core.Label);
+          label.text = "{title}";
+          label.fontSize = 12;
+          label.align = "right";
+          label.valign = "middle";
+          label.dy = 10; // Adjust the vertical position of the label
+      
+          marker.tooltipText = "{title}";
+          imageTemplate.propertyFields.latitude = "latitude";
+          imageTemplate.propertyFields.longitude = "longitude";
+      
+          // Add your cityData array here
+          imageSeries.data = [
+  {
+    "latitude": 30.802498,
+    "longitude": 31.265007,
+    "title": "Egypt",
+    "visited": true, // Add a property to indicate visited countries
+    "description": "In Egypt, I took on leadership roles including being the Head of the Students' Union, founding transformative activities, and representing my school and nation. I also achieved first place in the National Armed Forces College of Medicine competition.",
+    "imageURL": "images/egypt.jpg"
+  },
+  {
+    "latitude": 23.697810,
+    "longitude": 120.960515,
+    "title": "Taiwan",
+    "visited": true, 
+    "description": "In Taiwan, I represented my university and nation at the Global Youth Forum. Engaged with industry leaders, gaining insights into Taiwan's tech landscape and conducted research on environmental influences on fish conditions.",
+    "imageURL": "images/taiwan.jpg"
+  },
+  {
+    "latitude": 37.090240,
+    "longitude": -95.712891,
+    "title": "USA",
+    "visited": true,
+    "description": "At UCSF in the USA, I conducted intensive research in cognitive neuroscience, deriving insights from research data to enhance the understanding of brain functionality.",
+    "imageURL": "images/usa.jpeg"
+  },
+  {
+    "latitude": 20.593683,
+    "longitude": 78.962883,
+    "title": "India",
+    "visited": true,
+    "description": "In India, I collaborated at T-Hub, engaging with innovative minds and enhancing my skills within the tech and startup ecosystem.",
+    "imageURL": "images/india.jpg"
+  },
+  {
+    "latitude": -38.416097,
+    "longitude": -63.616673,
+    "title": "Argentina",
+    "visited": true,
+    "description": "In Argentina, I served as Product Management Coordinator for the Google Developer Student Club, mentoring aspiring product managers and leveraging Cognitive Neuroscience to refine program features.",
+    "imageURL": "images/argentina.jpg"
+  },
+
+];
+      
+          // Add your modal code here for displaying information when a pin is clicked
+          var modal = document.createElement("div");
+          modal.className = "modal";
+          modal.innerHTML = `
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h3 id="modalTitle"></h3>
+              <p id="modalDescription"></p>
+              <img id="modalImage" src="" alt="">
+            </div>
+          `;
+          document.body.appendChild(modal);
+      
+          var closeModal = modal.getElementsByClassName("close")[0];
+          var modalTitle = document.getElementById("modalTitle");
+          var modalDescription = document.getElementById("modalDescription");
+          var modalImage = document.getElementById("modalImage");
+      
+          imageTemplate.events.on("hit", function (ev) {
+            var data = ev.target.dataItem.dataContext;
+            chart.zoomToMapObject(ev.target);
+      
+            // Open the modal
+            modal.style.display = "block";
+      
+            // Set modal content
+            modalTitle.innerText = data.title;
+            modalDescription.innerText = data.description;
+            modalImage.src = data.imageURL;
+          });
+      
+          closeModal.onclick = function () {
+            modal.style.display = "none";
+          };
+      
+          window.onclick = function (event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          };
+      
+          // Function to set fill color for visited countries
+          function setVisitedCountries() {
+            polygonSeries.mapPolygons.each(function (mapPolygon) {
+              var isoCode = mapPolygon.dataItem.id;
+              var image = imageSeries.getImageById(isoCode);
+              if (image && image.dataItem.dataContext.visited) {
+                mapPolygon.fill = am4core.color("#D3D3D3");
+              }
+            });
+          }
+      
+          // Call the function to set visited countries after the map is initialized
+          chart.events.on("ready", setVisitedCountries);
+        });
+      </script>
+      <script src = "typewriting-master/typewriting.js"></script>
+
+      
+    
+</body>
+</html>
